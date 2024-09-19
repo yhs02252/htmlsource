@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        padding-bottom: 1500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        링크 태그 : <a href="실제 가야할 주소">보여지는 이름<a>
+        
+        a - 밑줄 기본
+            unvisited link + blue
+            visited link + purple
+            active link + red
+
+            target="_self" (defualt값) : 현재 창에 링크 페이지 띄우기
+            target="_blank" : 새 탭으로 링크 페이지 띄우기
+
+            href : 상대주소 or 절대주소
+            1) 상대주소 : 같은 웹 사이트 내 페이지(. : 현재 경로 / .. : 상위 경로)
+            2) 절대주소 : 타 사이트내 페이지(https://www.~~)
+    -->
+    <div>
+      <a href="https://www.naver.com" target="_blank">네이버</a>
+    </div>
+    <ul>
+      <li><a href="http://google.com">구글</a></li>
+      <li><a href="http://coupang.com">쿠팡</a></li>
+      <!-- href 값을 비워두거나 # : 현재 페이지를 의미 -->
+      <li><a href="">링크1</a></li>
+      <li><a href="./스타일.html">스타일 페이지</a></li>
+      <li><a href="../img/img.html">스타일 페이지</a></li>
+    </ul>
+    <div>
+      <!-- #~ : id라는 의미 -->
+      <ul>
+        <li>
+          <a href="#title1">제목1</a>
+        </li>
+        <li>
+          <a href="#title2">제목2</a>
+        </li>
+      </ul>
+    </div>
+    <h2 id="title1">제목1</h2>
+    <h2 id="title2">제목2</h2>
+    <!-- 이메일 링크 -->
+    <p>
+      <a href="mailto:admin@gmail.com">이메일 전송</a>
+    </p>
+    <!-- 파일 링크 : 브라우저에서 열림(브라우저가 해석가능한 파일인 경우 / 다운로드 (해석 불가능 파일) -->
+    <p>
+      <a href="./info.txt">텍스트 다운로드</a>
+    </p>
+    <p>
+      <a href="./README.md" download="download">README.md</a>
+    </p>
+    <p>
+      <a href="./test.xlsx">text.xlsx</a>
+    </p>
+  </body>
+</html>

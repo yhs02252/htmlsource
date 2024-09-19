@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        form : 가장 중요한 태그 
+
+        <form> ~~~~ </form> : 웹 서버에 정보를 제출하기 위한 양식을 정의
+
+      ★ 1. method : 폼을 전송하는 방법
+         1) get(default) : 사용자의 입력값이 주소줄에 보이는 방식
+         2) post : 사용자의 입력값을 감싸서 보내는 방식
+        2. action : 전송한 정보를 처리할 url(상대주소)
+                    값이 없는 경우 현재 페이지 임
+      ★ 3. name : 폼 이름 지정
+        4. novalidate : 서버로 전송 시 양식 데이터의 유효성을 검사하지 않도록 지정
+        5. autocomplete="on" (default) : 사용자가 이전에 입력한 값으로 자동완성 기능을 사용할 것인지 여부
+    -->
+    <!-- method 지정안하는 경우 get이 기본임 -->
+    <form action=""></form>
+    <form
+      action=""
+      method="get"
+      name="myFrom"
+      novalidate
+      autocomplete="on"
+    ></form>
+    <form action="" method="post"></form>
+  </body>
+</html>

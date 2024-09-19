@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        width: 100%;
+        /* 브라우저 화면에 맞는 크기 고정 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    table
+      thead : 테이블 안의 header content 그룹 개념으로 표현
+      tbody : 테이블 안의 body content 그룹 개념으로 표현
+    -->
+    <table>
+      <caption>
+        OO 대학의 축제 일정표
+      </caption>
+      <thead>
+        <tr>
+          <th>날짜</th>
+          <th>시간</th>
+          <th>행사명</th>
+          <th colspan="2">장소 및 설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">11/30(목)</td>
+          <td>12:00</td>
+          <td>개막행사</td>
+          <td>학생회관 앞</td>
+          <td>개막 기념 나눔 행사</td>
+        </tr>
+        <tr>
+          <td>12:00 ~ 17:00</td>
+          <td>부스행사</td>
+          <td>원형잔디 주변</td>
+          <td>과별, 동아리별 부스 행사</td>
+        </tr>
+        <tr>
+          <td>16:00 ~ 23:00</td>
+          <td>대우 대학 가요제</td>
+          <td>특설무대</td>
+          <td>숨겨온 끼를 마음 껏 발산해 보세요</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
