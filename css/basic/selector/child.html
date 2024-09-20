@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div h2 {
+        color: red;
+      } */
+      div > h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      body 자식 태그 : div, h2, div ==> > 꺽쇠
+      body 자손(자식 + 손자) 태그 : div - h1,h2, h2, div-h1,nav-h2 ==> 공백
+       - body 첫번째 자식 전체: div *
+                          자손: div h2
+    -->
+    <div>
+      <h1>CSS 기본 문법</h1>
+      <h2>선택자 - 5. 자손(하위) 선택자</h2>
+    </div>
+    <h2>선택자 - 5. 자손(하위) 선택자</h2>
+    <div>
+      <h1>CSS기본 문법</h1>
+      <nav>
+        <h2>자손(하위) 선택자</h2>
+        <h2>자손(하위) 선택자</h2>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* target 속성이 존재하는 태그의 밑줄 제거 */
+      /* [target] {
+        text-decoration: none;
+      } */
+
+      /* target=_self 태그의 글자색 흰색, 배경색 red */
+      [target="_self"] {
+        color: white;
+        background-color: red;
+      }
+
+      /* target=_blank 태그의 글자색 흰색, 배경색 blue */
+      [target="_blank"] {
+        color: white;
+        background-color: blue;
+      }
+      [class$="test"] {
+        background-color: beige;
+      }
+      [id^="top"] {
+        background-color: yellow;
+      }
+      [class*="te"] {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      속성 선택자
+
+      태그명[속성명]
+      [속성명]
+      [속성명=값]
+      [속성명~=값] : 값을 포함하고 있는
+      [속성명$=값] : 값으로 끝나는
+      [속성명^=값] : 값으로 시작하는
+      [속성명|=값] : 값 다음에 - 이 오는
+      [속성명*=값] : 특정 값을 포함하고 있는(일부 일치)
+    -->
+    <div class="first_test">First_Test</div>
+    <div class="my_test">Div_My_Test</div>
+    <p class="mytest">My Test</p>
+    <div>
+      <h1 id="top-title">CSS 기본 문법</h1>
+      <h2 id="topcontent">선택자 - 8. 속성 선택자</h2>
+    </div>
+    <ul>
+      <li>
+        <a href="#" target="_blank">google</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">daum</a>
+      </li>
+      <li>
+        <a href="#" target="_self">naver</a>
+      </li>
+    </ul>
+    <a href="mailto:master@google.com">마스터에게 메일 보내기</a>
+  </body>
+</html>

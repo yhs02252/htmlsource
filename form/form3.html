@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        select : drop-down list
+            option : 아이템 작성
+            size : 선택지 기본 사이즈 설정
+            multiple : 선택할 수 있는 아이템 다수 설정
+
+        selected : 먼저 선택되어 보여줄 아이템에 사용
+    -->
+    <form action="" method="get">
+      <fieldset>
+        <legend>필수사항</legend>
+        <div>
+          <label for="cars">Choose as car</label>
+          <select name="cars" id="cars" size="4" multiple>
+            <option value="volvo">volvo</option>
+            <option value="saab">saab</option>
+            <option value="fiat">fiat</option>
+            <option value="audi" selected>audi</option>
+          </select>
+        </div>
+      </fieldset>
+      <div>
+        <label for="cars">Choose as car</label>
+        <select name="cars" id="cars" size="4" multiple>
+          <option value="volvo">volvo</option>
+          <option value="saab">saab</option>
+          <option value="fiat">fiat</option>
+          <option value="audi" selected>audi</option>
+        </select>
+      </div>
+      <!-- <textarea name="" id=""></textarea> -->
+      <!-- <textarea name="" id="" cols="30"></textarea> -->
+      <textarea name="" id="" cols="30" rows="10">데이터는 여기에</textarea>
+      <!-- <textarea name="" id="" rows="10"></textarea> -->
+      <div>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+        <input type="button" value="button" />
+        <button type="submit">전송</button>
+        <button type="button">버튼</button>
+        <button type="reset">초기화</button>
+        <!-- button 태그에서 type 생략 시 submit이 기본 -->
+        <button>전송2</button>
+      </div>
+    </form>
+  </body>
+</html>

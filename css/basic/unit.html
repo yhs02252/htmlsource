@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        상속 : 글자를 다루는 디자인 속성들이 상속 됨
+      
+      단위
+        1) px : 고정크기 (브라우저의 크기를 축소하면 스크롤이 나타남)
+        2) % : 상대크기 
+        3) em : em 단위가 쓰여진 곳의 폰트 사이즈 배수
+        4) vw, vh : viewport width, viewport height => 화면기준
+      */
+      /* body {
+        font-size: 18px;  ->  body 속성을 아래에 상속 
+      } */
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      h1 {
+        font-size: 1.5em; /* 16px * 1.5 = 24px ==> 18px * 1.5 = 27px */
+      }
+      h2 {
+        font-size: 1.2em; /* 16px * 1.2 = 19.2px */
+      }
+      p {
+        font-size: 1em; /* 16px */
+        width: 100vw;
+        height: 50vh;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>단위</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sunt,
+      delectus repellendus temporibus libero fugiat animi labore autem vero
+      voluptatibus dolores rerum, aut nobis quis, corporis id eveniet quo
+      aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Voluptatem cum magnam modi nam ea facere expedita aut! Quisquam deleniti,
+      aliquid, hic libero est doloribus ducimus beatae sapiente explicabo, magni
+      vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis harum
+      quam saepe adipisci architecto ut molestiae delectus aliquid, magni animi,
+      numquam qui! Sed similique voluptatibus tenetur expedita dicta minima
+      ullam.
+    </p>
+  </body>
+</html>

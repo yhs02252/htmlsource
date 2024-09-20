@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        중요(자주 씀) = ※
+
+        ※ value : default 값 지정
+        readonly : 읽기만 가능
+        disabled : input field 비활성화 / submit 시 정보 안 감
+        size : input field 크기 지정 / default 는 20, text,email,search,tel,url,password 사용가능
+        maxlength : 입력될 수 있는 크기 제한
+        min, max : 특정 범위로 입력 제한 / number, range, date, datetime-local, month, time 사용
+        step : 증감값 지정
+        multiple : 여러항목 선택 가능 / select, file 에 사용
+        pattern : 특정 패턴(정규식)으로 입력 제한 / tel, text, date, search, url, tel, email, password 사용가능
+        ※ placeholder : hint 제공 / text, email, search, tel, url ,password 사용 가능
+        ※ required : 필수 입력 요소 지정
+        autofocus : 페이지 로드 시 특정 입력 요소에 포커스 지정
+    -->
+    <form action="" method="get">
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" value="John" disabled />
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          size="30"
+          placeholder="이름 입력"
+          required
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="pin">Pin : </label>
+        <input type="text" name="pin" id="pin" size="4" maxlength="4" />
+      </div>
+      <div>
+        <label for="date">date : </label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          min="2024-08-20"
+          max="2024-12-31"
+        />
+      </div>
+      <div>
+        <label for="quantity">quantity : </label>
+        <input
+          type="number"
+          name="quantity"
+          id="quantity"
+          min="1"
+          max="10"
+          required
+          step="2"
+        />
+      </div>
+      <div>
+        <button type="submit">전송</button>
+      </div>
+    </form>
+  </body>
+</html>
