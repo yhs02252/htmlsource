@@ -1,0 +1,50 @@
+/* block 요소
+    width : 100%
+    height : 0%
+
+    inline
+    width : 하위 요소의 너비만큼(값 지정 불가)
+    height : 하위 요소의 높이만큼(값 지정 불가)
+
+    display : inline, block, inline-block, none, ....
+
+    화면에 요소 숨기기
+    1) display:none; 안보이는 요소는 아예 없는 것처럼 처리
+    2) visibility:hidden; 안보이는 요소의 자리는 잡아놓고 있음
+*/
+
+div {
+  width: 500px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+span {
+  width: 500px;
+  height: 100px;
+  background-color: cadetblue;
+  display: block;
+}
+
+p {
+  text-align: center;
+}
+
+p a {
+  background-color: blue;
+  color: white;
+  /* padding: 10px; */
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+
+p a:link {
+  text-decoration: none;
+}
+
+.hidden {
+  /* display: none; */
+  visibility: hidden;
+}

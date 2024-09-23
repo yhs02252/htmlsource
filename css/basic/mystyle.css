@@ -1,0 +1,19 @@
+.ecosystem {
+  color: red;
+  font-size: 20px;
+}
+
+/* .area {
+        color: blue;
+      }
+      #text2 {
+        color: red;
+      } */
+
+.area p {
+  color: blue;
+}
+
+p {
+  color: red !important;
+}

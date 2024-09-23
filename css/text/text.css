@@ -1,0 +1,58 @@
+p:first-child {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold; /* 400(default) */
+  /*     
+    컴퓨터에 설치된 폰트 사용 
+    폰트명이 공백이 있는경우 "" 사용
+    폰트를 여러개 지정할 경우 왼쪽에 있는 폰트부터 사용
+
+    폰트 계열
+    1) monospace
+    2) serif
+    3) sans-serif
+    4) cursive
+
+    웹폰트
+    웹에 있는 폰트 적용
+   */
+  font-family: "Courier New", Courier, monospace;
+}
+
+p:first-of-type {
+  /* 이렇게 한꺼번에 쓸 수도 있다 */
+  font: italic bold 12px Arial, serif;
+}
+
+div {
+  font-size: 24px;
+  /* line-height: 30px; 고정값 */
+  line-height: 1.5;
+}
+
+.serif {
+  /* 바탕체 */
+  font-family: serif;
+}
+
+.sans-serif {
+  /* 고딕체 */
+  font-family: sans-serif;
+}
+
+.monospace {
+  /* 고정너비 */
+  font-family: monospace;
+}
+
+.cursive {
+  /* 필기체 */
+  font-family: cursive;
+}
+
+.ko {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: #ff0000;
+        outline: none;
+      }
+      a:visited {
+        color: #00ff00;
+      }
+      a:hover {
+        color: #ff00ff;
+      }
+      a:active {
+        color: #0000ff;
+      }
+      a:focus {
+        background-color: #e5ff00;
+      }
+      /* input {
+        width: 200px;
+        outline: none;
+        transition: 0.4s;
+      }
+      input:focus {
+        width: 300px;
+      } */
+
+      h1:hover {
+        color: #ff0000;
+      }
+
+      input:disabled {
+        background-color: #ddd;
+        border: 1px solid #ccc;
+      }
+      input:checked + span {
+        color: #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        가상(Pseudo) 클래스 선택자
+
+        a:link => 방문하지 않은 링크 스타일
+        a:visited => 방문한 링크 스타일
+        a:active => 요소를 활성화했을 때 스타일
+
+        a:hover => mouse over
+        a:focus => 요소에 포커스가 갔을 때
+        
+        :active, :hover, :focus => 다른 태그에도 적용됨
+        -->
+    <h1>가상 클래스 선택자</h1>
+    <ul>
+      <li><a href="https://google.com/" target="_blank">google.com</a></li>
+      <li><a href="https://naver.com/" target="_blank">naver.com</a></li>
+      <li><a href="https://daum.net/" target="_self">daum.net</a></li>
+    </ul>
+    <div>
+      <input type="text" name="" id="" />
+    </div>
+    <form action="" method="get">
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <div>
+          <label for="">이름</label>
+          <input type="text" name="name" id="name" disabled />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요</p>
+        <div>
+          <input type="radio" name="subject" id="" value="speaking" checked />
+          <span>회화</span>
+          <input type="radio" name="subject" id="" value="grammer" />
+          <span>문법</span>
+          <input type="radio" name="subject" id="" value="writing" />
+          <span>작문</span>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

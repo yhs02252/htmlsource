@@ -1,0 +1,19 @@
+/* background
+    1) color
+    2) image
+*/
+
+.bg {
+  width: 400px;
+  height: 400px;
+  background-color: beige;
+}
+
+.bg {
+  background-image: url(../img/bg.png);
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  /* 가로 : left center right */
+  /* 세로 : top center right */
+  background-position: right bottom;
+}

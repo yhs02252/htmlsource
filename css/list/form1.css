@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #555;
+  outline: none;
+}
+
+/* input 포커스가 들어오면 배경색 */
+input:focus {
+  background-color: beige;
+}
+
+div {
+  margin-bottom: 50px;
+}

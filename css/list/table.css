@@ -1,0 +1,29 @@
+/* border => 선두께, 선모양, 선색상 */
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  /* 테이블 너비 : 고정크기, 상대크기 */
+  width: 90%;
+}
+
+/* 행높이 */
+tr {
+  height: 50px;
+}
+
+/* th : 왼쪽 정렬 */
+th {
+  text-align: left;
+  /* 세로 정렬 ↓ */
+  vertical-align: bottom;
+}
+
+/* td 안쪽 여백 */
+th,
+td {
+  padding: 10px;
+}
