@@ -1,0 +1,19 @@
+.menu {
+  border: 2px solid rgb(218, 218, 218);
+  width: 350px;
+  height: 145px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.read-more {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  bottom: calc(100% + 10px);
+  /* bottom: 155px */
+  /* top: -30px; */
+}

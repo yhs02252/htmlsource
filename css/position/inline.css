@@ -1,0 +1,44 @@
+body {
+  background-color: #222;
+}
+
+.grid {
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+
+  /* overflow: hidden; */
+
+  /* inline block */
+  /*font-size: 0; 태그 공백 제거
+  text-align: right; */
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  float: right;
+
+  /* inline block */
+  /* display: inline-block;
+  vertical-align: top; 글자 꼬리 제거 */
+}
+
+.a {
+  background-color: orange;
+  float: left;
+}
+
+.b {
+  background-color: orangered;
+}
+
+.c {
+  background-color: red;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

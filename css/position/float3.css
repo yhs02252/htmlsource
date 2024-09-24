@@ -1,0 +1,18 @@
+body {
+  background: #ddd;
+}
+
+.box {
+  background-color: white;
+  /* height: 50px; */
+  overflow: hidden; /* auto */
+  /* 이후 적용할 다음요소가 없을 때 쓴다 */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        overflow : 요소의 크기 이상으로 내용이 넘쳤을때 처리
+        1) visible(default) : 넘친 부분을 그대로 보여ㅈㅁ
+        2) auto : 넘친 부분이 있는 경우 잘라내고, 스크롤바를 이용해서 볼 수 있도록 함
+        3) hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+        4) scroll : 넘친 부분이 있는 경우 잘라내고, 가로,세로 스크롤바 모두를 이용해서 볼 수 있도록 함
+        */
+      .overflow {
+        /* block => width : 100%,  height : 0 (기본) */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ipsa
+      iste corporis minus at, saepe assumenda, molestias quidem architecto
+      nihil, facilis dicta porro eligendi voluptates fugiat eveniet nemo
+      doloribus! Alias repellat praesentium aspernatur adipisci nostrum
+      perferendis aut voluptates at perspiciatis? Voluptatibus, dolorem. Ad iure
+      tenetur architecto consequuntur consequatur itaque aliquam, cumque quia
+      quo. Magni nesciunt iure atque omnis at, nostrum labore odio et, eos
+      aliquam quidem quibusdam quaerat doloribus modi soluta. Sint at et
+      explicabo veritatis, consequuntur ipsam sunt odit delectus tempora, dicta
+      eum voluptates. Dolor, sint sapiente iure nihil iusto, tenetur rem,
+      quaerat adipisci pariatur repellat perspiciatis. Rem, architecto. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ipsa iste
+      corporis minus at, saepe assumenda, molestias quidem architecto nihil,
+      facilis dicta porro eligendi voluptates fugiat eveniet nemo doloribus!
+      Alias repellat praesentium aspernatur adipisci nostrum perferendis aut
+      voluptates at perspiciatis? Voluptatibus, dolorem. Ad iure tenetur
+      architecto consequuntur consequatur itaque aliquam, cumque quia quo. Magni
+      nesciunt iure atque omnis at, nostrum labore odio et, eos aliquam quidem
+      quibusdam quaerat doloribus modi soluta. Sint at et explicabo veritatis,
+      consequuntur ipsam sunt odit delectus tempora, dicta eum voluptates.
+      Dolor, sint sapiente iure nihil iusto, tenetur rem, quaerat adipisci
+      pariatur repellat perspiciatis. Rem, architecto.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.slide {
+  border: 2px solid green;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.slide img {
+  float: left;
+}
+
+/* a : */
+.controls a {
+  background-color: black;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  white-space: nowrap;
+  top: calc(50% - 25px);
+}
+
+.prev {
+  right: 100%;
+}
+
+.next {
+  left: 100%;
+}

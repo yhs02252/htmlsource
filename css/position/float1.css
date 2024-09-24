@@ -1,0 +1,26 @@
+/* 
+    float: 요소를 띄운다
+    1) left : 왼쪽으로 띄운다
+    2) right : 오른쪽으로 띄운다
+
+    float 다음에 오는 요소에 대한 처리가 필요함(float 해제)
+    clear:left, clear:right, clear:both
+
+    1) float 다음 요소에 clear:both 
+    2) overflow:hidden or auto (float3.html 참조)
+    3) 가상요소 이용 (float4.html 참조)
+*/
+
+.picture {
+  float: left;
+}
+
+.picture img {
+  vertical-align: top;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* p {
+  border: 4px solid black;
+} */

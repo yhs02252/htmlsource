@@ -1,0 +1,22 @@
+body {
+  background: #ddd;
+}
+
+.box {
+  background-color: white;
+}
+
+/* clearfix 클래스명을 가진 요소 다음에 가상 요소 설정 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
