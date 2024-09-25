@@ -1,0 +1,80 @@
+/* 
+    자식요소(block)를 한줄로 배치
+         1) display : inline-block
+            - 글자 꼬리 공백 / 태그 공백
+         2) float:left or right
+         3) display : flex (최근 방식)
+
+
+    <display : flex>
+    1) flex Container : 자식요소들이 옆으로 나열되기를 원하는 부모 요소
+        - display: flex;
+        - flex-direction(나열 방향): row(default)
+                                     row-reverse(float:right 와 같은 개념)
+                                     column(수직축을 기준으로 나열
+                                     column-revers
+
+        - flex-wrap : nowrap(default) 브라우저 너비에 맞춰서 자식요소의 너비가 결정됨
+                      warp 브라우저 너비가 축소되어도 자식요소의 너비는 유지(마지막 요소부터 아래로 떨어짐)
+                      wrap-reverse (마지막 요소부터 위로 올려짐)
+                      
+                flex-direction: row; 일 때 -        flex-direction: column; 일 때 -
+                     주축 : x 축                        주축 : y 축 
+                     교차축 : y 축                      교차축 : x 축
+
+        - justify-content: 주 축의 정렬 방법을 설정
+          값 : flex-start (default) : 왼쪽 정렬
+               flex-end : 오른쪽 정렬
+               center : 가운데 정렬
+               space-around : 요소 간 좌우(x축) 여백을 동일하게 부여(여백포함 각 요소 간격 균일화)
+               space-between : 첫 요소 맨 끝, 마지막 요소 오른쪽 끝으로 배치한 후 나머지 공간을 할 당
+               space-evenly : 요소들 간의 모든공간 균일하게 부여
+
+        - align-content : 교차축의 정렬 방법을 설정(flex-wrap:wrap일 때 작동)
+          값 : stretch (default) : 자식의 높이가 지정되지 않았을 때 자식요소를 상위요소 높이 만큼 늘려버림
+               flex-start : y축 상단에 정렬
+               flex-end : y축 하단에 정렬
+               center : y축 가운데 정렬
+               space-around : 요소 간 위아래(y축) 여백을 동일하게 부여
+               space-between : 첫 요소 맨 끝, 마지막 요소 오른쪽 끝으로 배치한 후 나머지 공간을 할 당
+               space-evenly : 요소들 간의 모든공간 균일하게 부여
+
+
+        - align-items : 한 줄일때 정렬 방법
+          1) flex-wrap : wrap 을 통해 여러줄 일 경우에는 align-content 속성 우선
+              - 값 : baseline (글자 아랫부분을 기준으로 정렬)
+                     stretch(default)
+                     flex-start, flex-end, center
+                     
+*/
+.container {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  align-content: space-evenly;
+  border: 1px solid;
+}
+
+.container .item {
+  width: 200px;
+  height: 100px;
+  border: 4px dashed;
+}
+
+.container .item:first-child {
+  background-color: red;
+}
+
+.container .item:nth-child(2) {
+  background-color: blue;
+}
+.container .item:nth-child(3) {
+  background-color: green;
+}
+.container .item:nth-child(4) {
+  background-color: magenta;
+}
+.container .item:nth-child(5) {
+  background-color: yellow;
+}

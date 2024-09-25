@@ -14,18 +14,16 @@
   padding: 14px 16px;
 }
 
-a {
-  text-decoration: none;
-}
+/* a {
+} */
 /* 메뉴에 마우스 올리면 배경색 blueviolet 변경 */
-.container li a:hover {
+.container li:hover {
   background-color: blueviolet;
-  padding: 14px 16px;
 }
 
-.container a:visited {
+.container a {
   color: white;
-  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* .clearfix 를 이용한 float 해제 */

@@ -1,0 +1,120 @@
+/* flex
+    1) flex Container : 자식요소들이 옆으로 나열되기를 원하는 부모 요소
+    2) flex Item : 옆으로 나열될 자식요소 설정
+        order : 자식요소 순서 설정(기본값 0, 음수값 지정시 앞쪽으로 이동)
+    3) flex-grow : 자식 요소 너비 증가 비율 설정(숫자가 클수록 더 많은 너비 할당)
+                    0 (default)
+    4) flex-shrink : 자식 요소 너비 감소 비율 설정
+                      1 (default)
+    5) flex-basis : 자식 요소가 가지고 있는 컨텐츠를 포함하여 전체 너비가 같게 표현
+        flex-grow : 1 => content 가 가지고있는 부분을 제외하고 남아있는 여백을 가준으로 늘어남
+ */
+
+.container {
+  display: flex;
+  border: 4px solid;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border: 4px dashed red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  order: 1;
+}
+
+.item6 {
+  order: -1;
+}
+
+.container2 {
+  display: flex;
+  border: 4px solid;
+  margin-top: 40px;
+}
+
+.container2 .item {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border: 4px dashed red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 .item:nth-child(1) {
+  background: #ffc447;
+}
+.container2 .item:nth-child(2) {
+  background: #e87635;
+}
+.container2 .item:nth-child(3) {
+  background: #d335e8;
+}
+.container2 .item:nth-child(4) {
+  background: #ff4847;
+}
+
+.grow1 .item:nth-child(1) {
+  flex-grow: 0;
+}
+.grow1 .item:nth-child(2) {
+  flex-grow: 0;
+}
+.grow1 .item:nth-child(3) {
+  flex-grow: 0;
+}
+.grow1 .item:nth-child(4) {
+  flex-grow: 1;
+}
+
+.grow2 .item:nth-child(1) {
+  flex-grow: 1;
+}
+.grow2 .item:nth-child(2) {
+  flex-grow: 3;
+}
+.grow2 .item:nth-child(3) {
+  flex-grow: 1;
+}
+.grow2 .item:nth-child(4) {
+  flex-grow: 0;
+}
+
+.grow3 .item:nth-child(1) {
+  flex-grow: 1;
+}
+.grow3 .item:nth-child(2) {
+  flex-grow: 2;
+}
+.grow3 .item:nth-child(3) {
+  flex-grow: 1;
+}
+.grow3 .item:nth-child(4) {
+  flex-grow: 2;
+}
+
+.container3 {
+  display: flex;
+  border: 4px solid blue;
+}
+
+.container3 .item {
+  height: 100px;
+  background-color: tomato;
+  border: 4px dashed red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1;
+  flex-basis: 0; */
+  flex: 1 1 0;
+  /* flex: 1 1 auto; 컨텐츠를 제외한 너비만 동일 */
+}

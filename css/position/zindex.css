@@ -1,0 +1,13 @@
+/* 
+    z-index : 요소 쌓임 순서 지정
+    1) position:static 을 제외한 podition 속성 값이 있을 경우 가장 위에 쌓임
+    2) position 이 모두 존재한다면 z-index 속성의 숫자 값이 높을 경우 위에 쌓임
+    3) position 속성의 값이 있고, z-index 속성의 숫자값이 같다면 HTML 기준 마지막 코드 일수록 아래로 깔림
+ */
+
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}

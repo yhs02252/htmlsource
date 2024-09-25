@@ -1,0 +1,76 @@
+/* 전체 요소의 크기는 border 포함 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body 배경색 #ecf0f1, 글꼴 open sans */
+body {
+  background-color: #ecf0f1;
+  font-family: "Open Sans";
+}
+
+/* .wrapper :  너비 100% , max-width 960px, 바깥여백 상하32, 좌우 auto*/
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 32px auto;
+}
+
+.flexbg {
+  display: flex;
+}
+
+/* 아이템 순서 변경 left, main, right순 */
+
+/* left 배경색 #3498db */
+.flexbg .left {
+  order: 1;
+  background-color: #3498db;
+  color: #ffffffb0;
+}
+/* right 배경색 #34495e */
+.flexbg .right {
+  order: 3;
+  background-color: #34495e;
+  color: #ffffffb0;
+}
+/* main 배경색 white */
+.flexbg main {
+  order: 2;
+  background-color: white;
+  width: 60%;
+  padding: 10px;
+}
+
+.flexbg .sidebar {
+  width: 20%;
+  padding: 10px;
+}
+
+/*  너비가 줄면 두줄로 변경 => width 변경 */
+@media screen and (max-width: 768px) {
+  .flexbg {
+    flex-wrap: wrap;
+  }
+  .flexbg main {
+    order: 1;
+    width: 100%;
+  }
+  .flexbg .sidebar {
+    width: 50%;
+  }
+  .flexbg .left {
+    order: 2;
+  }
+  .flexbg .right {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flexbg .sidebar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+/* 
+    자식요소(block)를 한줄로 배치
+         1) display : inline-block
+            - 글자 꼬리 공백 / 태그 공백
+         2) float:left or right
+         3) display : flex (최근 방식)
+
+
+    flex
+    1) flex Container : 자식요소들이 옆으로 나열되기를 원하는 부모 요소
+    2) flex Item : 옆으로 나열될 자식요소 설정
+    3) flex basis : 자식 요소가 가지고 있는 컨텐츠를 포함하여 전체 너비가 같게 표현
+
+*/
+.container {
+  display: flex;
+  /* flex-direction: column-reverse; */
+}
+
+.container div {
+  background-color: silver;
+  height: 300px;
+  margin: 0 2px;
+  width: 33.33%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* line-height: 300px; */
+}

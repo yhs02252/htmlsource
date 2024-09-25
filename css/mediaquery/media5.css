@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row div:first-child {
+  background-color: #aaa;
+}
+.row div:nth-child(2) {
+  background-color: #bbb;
+}
+.row div:nth-child(3) {
+  background-color: #ccc;
+}
+.row div:last-child {
+  background-color: #ddd;
+}
+
+.row .column {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .row .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row .column {
+    width: 100%;
+  }
+}

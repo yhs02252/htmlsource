@@ -1,0 +1,50 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+body {
+  background-color: #333338;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444;
+}
+
+.main-content p,
+.main-content h3 {
+  margin: 15px 0;
+}
+
+/* main-content, sidbat, 배경색 #eee, 안쪽여백 6, 바깥여백 10 */
+.main-content {
+  background-color: #eee;
+  padding: 6px;
+  margin: 10px;
+}
+
+.sidebar {
+  background-color: #eee;
+  padding: 6px;
+  margin: 10px;
+}
+
+/* panel 배경 흰색 한쪽여백 20 바깥여백 10 */
+.panel {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* display: flex;
+  flex-wrap: wrap;                      <= 직접 width 를 설정했다면 이 쪽도 괜찮
+  align-content: space-between; */
+}
